@@ -1,6 +1,6 @@
 import axios from "axios"
+// import NProgress from "nprogress"
 import { getToken } from "./token"
-// import { nprogress } from "nprogress"
 
 // import "nprogress/nprogress.css"
 //封装axios 
@@ -12,7 +12,7 @@ const http = axios.create({
 // Add a request interceptor
 axios.interceptors.request.use(function (config) {
   // Do something before request is sent
-
+  // NProgress.start()
   const token = getToken()
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
@@ -25,12 +25,12 @@ axios.interceptors.request.use(function (config) {
 
 // Add a response interceptor
 axios.interceptors.response.use(function (response) {
-  // nprogress.start()
+  // NProgress.done()
   // Any status code that lie within the range of 2xx cause this function to trigger
   // Do something with response data
-  return response.data
+  return response
 }, function (error) {
-  // nprogress.done()
+  // NProgress.done()
   // Any status codes that falls outside the range of 2xx cause this function to trigger
   // Do something with response error
   return Promise.reject(error)

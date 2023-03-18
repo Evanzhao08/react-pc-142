@@ -12,9 +12,9 @@ class LoginStore {
     const res = await http.post('http://geek.itheima.net/v1_0/authorizations', {
       mobile, code
     })
-    this.token = res.data.token
+    this.token = res.data.data.token
     //存入ls
-
+    console.log(res.data)
     setToken(this.token)
   }
 }
