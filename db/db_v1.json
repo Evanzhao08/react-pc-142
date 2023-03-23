@@ -1,0 +1,247 @@
+{
+  "channels": {
+    "data": {
+      "channels": [
+        {
+          "id": 0,
+          "name": "推荐"
+        },
+        {
+          "id": 1,
+          "name": "html"
+        },
+        {
+          "id": 2,
+          "name": "开发者资讯"
+        },
+        {
+          "id": 4,
+          "name": "c++"
+        },
+        {
+          "id": 6,
+          "name": "css"
+        },
+        {
+          "id": 7,
+          "name": "数据库"
+        },
+        {
+          "id": 8,
+          "name": "区块链"
+        },
+        {
+          "id": 9,
+          "name": "go"
+        },
+        {
+          "id": 10,
+          "name": "产品"
+        },
+        {
+          "id": 11,
+          "name": "后端"
+        },
+        {
+          "id": 12,
+          "name": "linux"
+        },
+        {
+          "id": 13,
+          "name": "人工智能"
+        },
+        {
+          "id": 14,
+          "name": "php"
+        },
+        {
+          "id": 15,
+          "name": "javascript"
+        },
+        {
+          "id": 16,
+          "name": "架构"
+        },
+        {
+          "id": 17,
+          "name": "前端"
+        },
+        {
+          "id": 18,
+          "name": "python"
+        },
+        {
+          "id": 19,
+          "name": "java"
+        },
+        {
+          "id": 20,
+          "name": "算法"
+        },
+        {
+          "id": 21,
+          "name": "面试"
+        },
+        {
+          "id": 22,
+          "name": "科技动态"
+        },
+        {
+          "id": 23,
+          "name": "js"
+        },
+        {
+          "id": 24,
+          "name": "设计"
+        },
+        {
+          "id": 25,
+          "name": "数码产品"
+        },
+        {
+          "id": 26,
+          "name": "软件测试"
+        }
+      ]
+    },
+    "message": "OK"
+  },
+  "articles": {
+    "data": {
+      "page": 1,
+      "per_page": 5,
+      "results": [
+        {
+          "id": "8216",
+          "comment_count": 0,
+          "cover": {
+            "images": [
+              "http://geek.itheima.net/resources/images/16.jpg"
+            ]
+          },
+          "like_count": 0,
+          "pubdate": "2019-02-11 09: 00: 00",
+          "read_count": 2,
+          "status": 2,
+          "title": "wkwebview离线化加载h5资源解决方案1"
+        },
+        {
+          "id": "8218",
+          "comment_count": 0,
+          "cover": {
+            "images": [
+              "http://geek.itheima.net/resources/images/18.jpg"
+            ]
+          },
+          "like_count": 0,
+          "pubdate": "2019-02-11 09: 00: 00",
+          "read_count": 2,
+          "status": 2,
+          "title": "wkwebview离线化加载h5资源解决方案1"
+        },
+        {
+          "id": "8219",
+          "comment_count": 0,
+          "cover": {
+            "images": [
+              "http://geek.itheima.net/resources/images/19.jpg"
+            ]
+          },
+          "like_count": 0,
+          "pubdate": "2019-02-11 09: 00: 00",
+          "read_count": 2,
+          "status": 2,
+          "title": "wkwebview离线化加载h5资源解决方案1"
+        },
+        {
+          "id": "8220",
+          "comment_count": 0,
+          "cover": {
+            "images": [
+              "http://geek.itheima.net/resources/images/20.jpg"
+            ]
+          },
+          "like_count": 0,
+          "pubdate": "2019-02-11 09: 00: 00",
+          "read_count": 2,
+          "status": 2,
+          "title": "wkwebview离线化加载h5资源解决方案1"
+        },
+        {
+          "id": "8221",
+          "comment_count": 0,
+          "cover": {
+            "images": [
+              "http://geek.itheima.net/resources/images/21.jpg"
+            ]
+          },
+          "like_count": 0,
+          "pubdate": "2019-02-11 09: 00: 00",
+          "read_count": 2,
+          "status": 2,
+          "title": "wkwebview离线化加载h5资源解决方案1"
+        }
+      ],
+      "total_count": 8
+    },
+    "message": "OK"
+  },
+  "articles1": [
+    {
+      "id": "8218",
+      "comment_count": 0,
+      "cover": {
+        "images": [
+          "http://geek.itheima.net/resources/images/18.jpg"
+        ]
+      },
+      "like_count": 0,
+      "pubdate": "2019-02-11 09: 00: 00",
+      "read_count": 2,
+      "status": 2,
+      "title": "wkwebview离线化加载h5资源解决方案1"
+    },
+    {
+      "id": "8219",
+      "comment_count": 0,
+      "cover": {
+        "images": [
+          "http://geek.itheima.net/resources/images/19.jpg"
+        ]
+      },
+      "like_count": 0,
+      "pubdate": "2019-02-11 09: 00: 00",
+      "read_count": 2,
+      "status": 2,
+      "title": "wkwebview离线化加载h5资源解决方案1"
+    },
+    {
+      "id": "8220",
+      "comment_count": 0,
+      "cover": {
+        "images": [
+          "http://geek.itheima.net/resources/images/20.jpg"
+        ]
+      },
+      "like_count": 0,
+      "pubdate": "2019-02-11 09: 00: 00",
+      "read_count": 2,
+      "status": 2,
+      "title": "wkwebview离线化加载h5资源解决方案1"
+    },
+    {
+      "id": "8221",
+      "comment_count": 0,
+      "cover": {
+        "images": [
+          "http://geek.itheima.net/resources/images/21.jpg"
+        ]
+      },
+      "like_count": 0,
+      "pubdate": "2019-02-11 09: 00: 00",
+      "read_count": 2,
+      "status": 2,
+      "title": "wkwebview离线化加载h5资源解决方案1"
+    }
+  ]
+}

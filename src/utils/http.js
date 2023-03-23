@@ -1,8 +1,9 @@
 import axios from "axios"
-// import NProgress from "nprogress"
+import NProgress from "nprogress"
 import { getToken } from "./token"
 
-// import "nprogress/nprogress.css"
+import "nprogress/nprogress.css"
+import { history } from "./history"
 //封装axios 
 const http = axios.create({
   baseURL: 'http://geek.itheima.net/v1_0',
@@ -10,9 +11,9 @@ const http = axios.create({
 })
 
 // Add a request interceptor
-axios.interceptors.request.use(function (config) {
+http.interceptors.request.use(function (config) {
   // Do something before request is sent
-  // NProgress.start()
+  NProgress.start()
   const token = getToken()
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
@@ -20,19 +21,25 @@ axios.interceptors.request.use(function (config) {
   return config
 }, function (error) {
   // Do something with request error
+
   return Promise.reject(error)
 })
 
 // Add a response interceptor
-axios.interceptors.response.use(function (response) {
-  // NProgress.done()
+http.interceptors.response.use(function (response) {
+  NProgress.done()
   // Any status code that lie within the range of 2xx cause this function to trigger
   // Do something with response data
-  return response
+  return response.data
 }, function (error) {
-  // NProgress.done()
+  NProgress.done()
   // Any status codes that falls outside the range of 2xx cause this function to trigger
   // Do something with response error
+  // console.dir(error)
+  if (error.response.status === 401) {
+    //跳回登陆
+    history.push('/login')
+  }
   return Promise.reject(error)
 })
 

@@ -1,6 +1,8 @@
 import React from "react"
+import { ChannelStore } from "./channel.Store"
 
 import { LoginStore } from "./login.Store"
+import { UserStore } from "./user.Store"
 class RootStore {
   constructor() {
     /** 
@@ -10,6 +12,8 @@ class RootStore {
   * 各自对应的值 就是我们导入的子模块实例对象
   */
     this.loginStore = new LoginStore()
+    this.userStore = new UserStore()
+    this.channelStore = new ChannelStore()
     // ...
   }
 }
