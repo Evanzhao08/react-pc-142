@@ -70,39 +70,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-<dict>
-	<key>Arch</key>
-	<string>Any</string>
-	<key>BundlePath</key>
-	<string>BlueToolFixup.kext</string>
-	<key>Comment</key>
-	<string>BT for BCM94360Z4/Z3</string>
-	<key>Enabled</key>
-	<true/>
-	<key>ExecutablePath</key>
-	<string>Contents/MacOS/BlueToolFixup</string>
-	<key>MaxKernel</key>
-	<string></string>
-	<key>MinKernel</key>
-	<string>21.00.00</string>
-	<key>PlistPath</key>
-	<string>Contents/Info.plist</string>
-</dict>
-<dict>
-	<key>Arch</key>
-	<string>Any</string>
-	<key>BundlePath</key>
-	<string>BrcmBluetoothInjector.kext</string>
-	<key>Comment</key>
-	<string>BT for BCM94360Z4/Z3</string>
-	<key>Enabled</key>
-	<true/>
-	<key>ExecutablePath</key>
-	<string></string>
-	<key>MaxKernel</key>
-	<string>20.99.99</string>
-	<key>MinKernel</key>
-	<string></string>
-	<key>PlistPath</key>
-	<string>Contents/Info.plist</string>
-</dict>
+
