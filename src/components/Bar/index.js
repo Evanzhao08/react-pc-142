@@ -2,7 +2,7 @@
 import * as echarts from 'echarts'
 import { useEffect, useRef } from 'react'
 
-function Bar ({ title, xData, yData, style }) {
+function Bar ({ title, xData, yData, style,color }) {
   const barRef = useRef()
 
   useEffect(() => {
@@ -19,6 +19,8 @@ function Bar ({ title, xData, yData, style }) {
           data: xData
         },
         yAxis: {},
+        barMaxWidth:'60px',
+        color,
         series: [
           {
             name: '销量',
@@ -29,7 +31,7 @@ function Bar ({ title, xData, yData, style }) {
       })
     }
     chartInit()
-  }, [title, xData, yData, style])
+  }, [title, xData, yData, style,color])
 
   return (
     <div ref={barRef} style={style}></div>

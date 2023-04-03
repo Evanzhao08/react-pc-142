@@ -30,7 +30,7 @@ function Login () {
         <Form
           validateTrigger={['onBlur', 'onChange']}
           initialValues={{
-            v: true,
+            remember: true,
             code: '246810'
           }}
           onFinish={onFinish}
