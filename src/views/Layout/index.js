@@ -15,6 +15,7 @@ const { Header, Sider } = Layout
 
 const GeekLayout = () => {
   const { pathname } = useLocation()
+  console.log('pathname', pathname)
   const { userStore, loginStore, channelStore } = useStore()
   const itemList = [
     { label: '数据概览', icon: HomeOutlined, key: '/' },
@@ -51,6 +52,7 @@ const GeekLayout = () => {
             mode="inline"
             theme="dark"
             defaultSelectedKeys={[pathname]}
+            selectedKeys={[pathname]}
             style={{ height: '100%', borderRight: 0 }}
             items={itemList.map(
               ({ icon, label, key }) => ({

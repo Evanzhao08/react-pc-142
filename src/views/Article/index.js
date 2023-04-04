@@ -73,7 +73,8 @@ const Article = () => {
   //删除
   const delArticle = (data) => {
     http.delete(`/mp/articles/${data.id}`).then(res => {
-      if (res.status === 200) {
+      console.log("res", res)
+      if (res.message === 'OK') {
         //刷新列表
         setParams({
           ...params,
